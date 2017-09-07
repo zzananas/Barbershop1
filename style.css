@@ -1,0 +1,8 @@
+body {
+ width: 960px;
+}
+header {
+  background-color: black;
+  width: inherit;
+  height:72px;
+}
