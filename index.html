@@ -1,81 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="style_fl.css">
     <meta charset="utf-8">
     <title>Barber shop</title>
   </head>
-  <body>
+  <body src="URL">
     <header class="main_header">
-     <div class="container">
+     <div class="container clearfix">
       <nav class="main_navigation" id="top_menu">
-        <ul>
-          <li class="information"> <a href="#">Информация</a></li>
-          <li class="news"> <a href="#">Новости</a></li>
-          <li class="price"> <a href="#">Прайс-лист</a></li>
-          <li class="shop"> <a href="#">Магазин</a></li>
-          <li class="contacts"> <a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-        <div class="user_block">
-          <a class="login" href="#">Вход</a>
+        <div class="navigation">
+          <div class="information"> <a href="#">Информация</a></div>
+          <div class="news"> <a href="#">Новости</a></div>
+          <div class="price"> <a href="#">Прайс-лист</a></div>
+          <div class="shop"> <a href="#">Магазин</a></div>
+          <div class="contacts"> <a href="#">Контакты</a></div>
         </div>
+
+        <div class="user_block">
+          <img class="log" src="..\img\icon-login.png"  alt="search">
+          <a class="login"  href="#">Вход</a>
+        </div>
+
+      </nav>
+
+     </div>
     </header>
         <main class="container">
           <div class="index_logo">
             <img src="..\img\index_logo.png" width="386" height="204" alt="Барбершоп Бородинский">
           </div>
-          <section class="features"> <!--можно с помощь ul вместо section-->
+          <section class="features clearfix"> <!--можно с помощь ul вместо section-->
             <div class="features_item">
               <b class="features_name">Быстро</b>
-              <p>Мы делаем свою работубыстро!
-                Два часа пролетят незаметно и
-                вы-счастивый обладатель стильной стрижки</p>
+              <img class="pic" src="..\img\romb.png">
+              <p>Мы делаем свою работу быстро! Два часа<br>
+                   пролетят незаметно и вы-счастивый<br>
+                   обладатель стильной стрижки-минутки!</p>
             </div>
             <div class="features_item">
               <b class="features_name">Круто</b>
-              <p>Забудьте, как вы стриглись раньше.
-              Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+              <img class="pic" src="..\img\romb.png">
+              <p>Забудьте, как вы стриглись раньше.<br>
+              Мы сделаем из вас звезду футбола или кино!<br>
+              Во всяком случае внешне.</p>
             </div>
             <div class="features_item">
               <b class="features_name">Дорого</b>
+              <img class="pic" src="..\img\romb.png">
               <p>Наши мастера-профессионалы
-                своего дела и не могут стоить дёшево.
-              К тому же, разве цена не даёт определённый статус?</p>
+                своего дела и <br>не  могут стоить дёшево.
+              К тому же, разве цена <br>не даёт определённый статус?</p>
             </div>
           </section>
-          <div class="inex_content">
+            <!-- <div class="news_photo"> -->
+           <div class="index_content">
             <div class="index_content_left">
               <h2 class="index_content_title">Новости</h2>
-              <ul class="news_preview">
-                <li>
+              <div class="news_preview">
+                <div>
                   <p>Нам наконец завезли Ягермайстер!
-                    Теперь вы сможете пропустить стаканчик во время стрижки</p>
-                    <time datetime="2016_01_11">11 января</time>
-                </li>
-                <li>
-                  <p>В нашей команде пополнение, Борис "Бритва" Стригунец,
-                  обладатель множества титулов и наград пополнил, наши стройные ряды</p>
-                    <time datetime="2016_01_18">18 января</time>
-                </li>
-              </ul>
-              <a class="btn" href="#">Все новости</a>
+                    Теперь вы <br>сможете пропустить стаканчик во время стрижки</p>
+                    <time datetime="2016_01_11">25 сентября</time>
+                </div>
+                <div >
+                  <p>В нашей команде пополнение, Борис "Бритва"<br> Стригунец,
+                  обладатель множества титулов и<br> наград пополнил, наши стройные ряды</p>
+                    <time datetime="2016_01_18">19 сентября</time>
+                </div>
               </div>
-            </div>
+              <a class="btn" type="button" href="#">Все новости</a>
+              </div>
+
             <div class="index_content_right">
+              <div class="together">
               <h2 class="index_content_title">Фотогалерея</h2>
               <div class="gallery">
                 <figure class="gallery_content">
-                 <img src="img\photo1.jpeg" width="286" height="164" alt="">
+                 <img src="..\img\photo1.jpg" width="300" height="179" alt="">
                 </figure>
                 <button class="btn gallery_prev">Назад</button>
                 <button class="btn gallery_next">Вперёд</button>
               </div>
-              <div class="inex_content">
+            </div>
+            </div>
+            </div>
+           <!-- </div> -->
+          <!-- <div class="contact_order"> -->
+              <div class="index_content_bottom clearfix">
                 <div class="index_content_left">
                   <h2 class="index_content_title">Контактная информация</h2>
                    <p>Барбершоп "Бородинский"<br>
                       Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                      Телефон: +7 (812) 666-02-66
                    </p>
                    <p>
                      Время работы:<br>
@@ -85,9 +102,11 @@
                    <a class="btn" href="#">Как проехать</a>
                    <a class="btn" href="#">Обратная связь</a>
                 </div>
+
                 <div class="index_content_right">
+                  <div class="together2">
                   <h2 class="index_content_title">Записаться</h2>
-                    <p>Укажите желаему дату и время и мы с вами свяжемся для
+                    <p>Укажите желаему дату и время и мы с вами свяжемся<br> для
                     подтверждения брони</p>
                     <form class="appointment_form" action="index.html" method="post">
                      <input type="text" name="date" value="" placeholder="Дата">
@@ -97,12 +116,14 @@
                        чтобы было номер телефона заполнять удобней с мобильных-->
                        <button class="btn" type="button">Отправить</button>
                     </form>
+                  </div>
+                    </div>
                 </div>
-              </div>
-            </div>
+            <!-- </div> -->
         </main>
     <footer class="main_footer">
     <div class="container">
+      <div class="foot_bottom">
       <div class="adress">
          Барбершоп "Бородинский"<br>
          Адрес: г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8<br>
@@ -111,14 +132,21 @@
       </div>
       <div class="social">
         <div class="friend"> Давайте дружить!</div>
-          <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
-          <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-          <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+          <a class="social_btn social_btn_vk" href="#">
+            <img src=" ..\img\vk.png"></a>
+          <a class="social_btn social_btn_fb" href="#">
+            <img src=" ..\img\fc.png">
+          </a>
+          <a class="social_btn social_btn_inst" href="#">
+            <img src=" ..\img\inst.png">
+          </a>
       </div>
       <div class="made_by">
-        <div> Разработано:</div>
-          <a class="btn" href="#">HTML Academy</a>
+        <div class="production"> Разработано:</div>
+          <a class="HTML_academy" href="#">
+          <img src=" ..\img\htmlacademy.png"> </a>
         </div>
+      </div>
       </div>
     </footer>
   </body>
