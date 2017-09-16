@@ -298,33 +298,40 @@ a[type="button"] {
   text-transform: uppercase;
 }
 .footer_social {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 150px;
-  height: 76px;
+  height: 75px;
   margin-right: 260px;
-}
 
+}
+.social__btns {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 .footer_social_friend_text {
-  height: 14px;
-  margin: 0 auto;
-  margin-bottom: 21px;
   text-transform: uppercase;
   text-align: center;
-
+  height: 13px;
 }
 .social_btn {
+  margin-top: 20px;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
   background-color: black;
-  height: 43px;
+  text-align: center;
   width: 43px;
+  height: 43px;
 }
 .social_btn_vk, .social_btn_fb {
 margin-right: 7px;
 }
 .social_btn:hover {
  background-color: grey;
- fill: black;
 }
 .footer_production {
   display: flex;
