@@ -306,7 +306,7 @@ a[type="button"] {
 .footer_social_friend_text {
   height: 14px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   text-transform: uppercase;
   text-align: center;
 
@@ -316,25 +316,15 @@ a[type="button"] {
   justify-content: space-around;
   align-items: center;
   background-color: black;
-}
-.social_btn_vk {
   height: 43px;
   width: 43px;
-  margin-right: 7px;
 }
-.social_btn_fb {
-  height: 43px;
-  width: 43px;
-  margin-right: 7px;
-}
-.social_btn_inst {
-  height: 43px;
-  width: 43px;
+.social_btn_vk, .social_btn_fb {
+margin-right: 7px;
 }
 .social_btn:hover {
  background-color: grey;
  fill: black;
-
 }
 .footer_production {
   display: flex;
