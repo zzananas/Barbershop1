@@ -62,7 +62,6 @@ body {
 }
 .user_block_log {
   margin-right: 10px;
-  opacity: 0.3;
 }
 .user_block:hover {
   background-color: #242424;
@@ -183,11 +182,14 @@ width: 300px;
 height: 330px;
 }
 .index_content_right_form {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;*/
   height: 105px;
 }
 form {
   height: 185px;
-  /*margin: auto;*/
 
 }
 input {
@@ -214,6 +216,7 @@ font-weight: bold;
 }
 input:focus {
 border: 2px solid #6c441e;
+background-color: #ecd69a;
 }
 /*BUTTONS*/
 .btn {
@@ -256,7 +259,7 @@ button {
 p {
   line-height: 24px;
   font-size: 14px;
-
+  font-weight: bold;
 }
 a[type="button"] {
   min-width: 0;
@@ -310,16 +313,13 @@ a[type="button"] {
 }
 .social_btn {
   display: inline-flex;
-  justify-content: space-around ;
+  justify-content: space-around;
   align-items: center;
   background-color: black;
 }
 .social_btn_vk {
-  height: 41px;
+  height: 43px;
   width: 43px;
-  padding-top: 2px;
-  position: relative;
-  bottom: 1px;
   margin-right: 7px;
 }
 .social_btn_fb {
@@ -333,6 +333,7 @@ a[type="button"] {
 }
 .social_btn:hover {
  background-color: grey;
+ fill: black;
 
 }
 .footer_production {
