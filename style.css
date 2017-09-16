@@ -131,14 +131,15 @@ margin-top: 60px;
   font-size: 15px;
 }
 .index_content_left {
+  position: relative;
   width: 380px;
   color: black;
-  min-height: 330px;
+  height: 330px;
   font-weight: bolder;
   text-transform: uppercase;
   margin-right: 100px;
 }
-.index_content_right {
+.index_content_right  {
   display: inline-flex;
   width: 300px;
   color: black;
@@ -149,14 +150,19 @@ margin-top: 60px;
   src: local("PTSans Narrow"),
        url("../fonts/PT_Sans-Narrow-Web-Regular.ttf");
 }
+
 .index_content_title {
-width: 380px;
+width: 300px;
 height: 31.2px;
 text-transform: uppercase;
 font-weight: bold;
 font-family: "PTSans Narrow";
 src: local("PTSans Narrow"),
      url("../fonts/PT_Sans-Narrow-Web-Regular.ttf");
+}
+.index_content_right_top {
+  width: 300px;
+  position: relative;
 }
 .gallery_content {
   margin: 0 auto;
@@ -168,29 +174,31 @@ src: local("PTSans Narrow"),
   display: flex;
   width: 300px;
 }
-.index_content_bottom a {
+.index_content_bottom {
+  height: 330px;
   position: relative;
-  top: 55px;
-
 }
 .index_content_right_bot {
+position: relative;
 width: 300px;
-margin-right: 90px;
+height: 330px;
+}
+.index_content_right_form {
+  height: 105px;
 }
 form {
   height: 185px;
-  width: 300px;
+  /*margin: auto;*/
 
 }
 input {
   outline: #663d15;
   height: 39px;
   max-width: 140px;
-  margin-bottom: 19px;
   border: 2px solid black;
 }
 input:nth-child(odd) {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 input[type="text"], input[type="tel"] {
@@ -219,6 +227,12 @@ border: 2px solid #6c441e;
   text-transform: uppercase;
   font-family: "PTSans Narrow";
 }
+.btn_content_left .btn{
+  position: relative;
+  top: 60px;
+  font-size: 13px;
+  padding: 13px 35px;
+}
 .btn:hover {
   background-color: #663d15;
 }
@@ -227,8 +241,8 @@ border: 2px solid #6c441e;
 }
 button[type="button"]{
   width: 300px;
-  position: relative;
-  top: 25px;
+  position: absolute;
+  bottom: 0;
   text-transform: uppercase;
 }
 button {
@@ -241,18 +255,20 @@ button {
   color: #aaa9a8;
 }
 p {
-  line-height: 23px;
-  font-size: 13px;
+  line-height: 24px;
+  font-size: 14px;
 
 }
 a[type="button"] {
-  border: none;
+  min-width: 0;
   background-color: black;
   padding: 13px 35px;
-  position: relative;
-  top: 33px;
-  text-transform: uppercase;
+  position: absolute;
+  /*top: 30px;*/
+  bottom: 0;
+  /*text-transform: uppercase;*/
 }
+
 /*FOOTER*/
 .main_footer {
   height: 190px;
@@ -322,13 +338,10 @@ a[type="button"] {
 }
 .footer_production {
   display: flex;
-  height: 76px;
   flex-direction: column;
   width: 140px;
-  margin-right: 10px;
-  font-size: 12px;
-  line-height: 26px;
-  font-weight: bold;
+  height: 78px;
+  justify-content: space-between;
 }
 .production_btn {
   width: 140px;
@@ -345,10 +358,6 @@ a[type="button"] {
 }
 .production_text {
   text-transform: uppercase;
-  height: 14px;
-  width: 109px;
-  margin: 0 auto;
-  margin-bottom: 20px;
   text-align: center;
 }
 .index_vibrate{
