@@ -298,23 +298,11 @@ a[type="button"] {
   text-transform: uppercase;
 }
 .footer_social {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 150px;
-  height: 75px;
   margin-right: 260px;
-
-}
-.social__btns {
-  display: inline-flex;
-  justify-content: space-between;
-  flex-direction: row;
+  text-align: center;
 }
 .footer_social_friend_text {
   text-transform: uppercase;
-  text-align: center;
   height: 13px;
 }
 .social_btn {
