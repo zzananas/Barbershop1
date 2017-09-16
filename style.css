@@ -36,7 +36,6 @@ body {
   align-items: center;
 }
 .navigation {
-  display: inline-flex;
   padding-left: 10px;
   width: 790px;
 }
@@ -55,7 +54,7 @@ body {
   display: inline-flex;
   margin-left: auto;
   height: 72px;
-  width: 107px;
+  padding: 0 30px;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -204,7 +203,7 @@ input:nth-child(odd) {
 input[type="text"], input[type="tel"] {
 font-family: "PTSans Narrow";
 src: local("PTSans Narrow"),
-url("../fonts/PT_Sans-Narrow-Web-Regular.ttf");
+     url("../fonts/PT_Sans-Narrow-Web-Regular.ttf");
 padding-left: 10px;
 width: 126px;
 border: 2px solid black;
